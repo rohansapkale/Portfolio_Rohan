@@ -72,28 +72,6 @@
               </li>
             </ul>
           </div>
-
-          <!-- Milestone 3 -->
-          <div class="p-4 sm:p-6 rounded-2xl bg-[#0e0e13] border border-white/[0.08] hover:border-red-500/30 transition-all space-y-2.5 sm:space-y-3">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/[0.06] pb-2.5 sm:pb-3">
-              <div>
-                <h3 class="text-sm sm:text-lg font-bold text-white">
-                  Cloud Infrastructure &amp; Web Systems Engineer
-                </h3>
-                <p class="text-[11px] sm:text-xs text-neutral-400 font-mono">Software Systems</p>
-              </div>
-              <span class="text-[10px] sm:text-xs font-mono text-neutral-400 px-2.5 sm:px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 self-start sm:self-auto whitespace-nowrap">
-                Aug 2022 — Nov 2023
-              </span>
-            </div>
-            <ul class="text-[11px] sm:text-sm text-neutral-300 space-y-2 font-light leading-relaxed">
-              <li class="flex items-start gap-2">
-                <span class="text-neutral-500 mt-0.5 sm:mt-1 flex-shrink-0">▪</span>
-                <span>Administered Linux production hosts (Ubuntu), Nginx reverse proxy routing, SSL automation with Let's Encrypt, and Dockerized microservices.</span>
-              </li>
-            </ul>
-          </div>
-
         </div>
 
       </div>
