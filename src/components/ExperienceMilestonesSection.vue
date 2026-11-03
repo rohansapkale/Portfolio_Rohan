@@ -24,14 +24,13 @@
             <!-- Center Red Glow -->
             <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-44 sm:w-56 h-44 sm:h-56 bg-red-600/30 rounded-full blur-[50px] pointer-events-none"></div>
 
-            <!-- Stylized Silhouette Profile -->
-            <div class="absolute inset-0 flex items-end justify-center pointer-events-none">
-              <svg class="w-full h-[90%] object-contain crimson-bottom-fade transition-transform duration-500 group-hover:translate-y-1" viewBox="0 0 360 450" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M145 85 C145 50, 215 50, 215 85 C222 110, 220 150, 212 175 C202 205, 158 205, 148 175 C140 150, 138 110, 145 85 Z" fill="#e5e7eb" />
-                <path d="M138 85 C130 60, 155 35, 180 32 C205 35, 230 60, 222 85 C215 70, 205 65, 180 65 C155 65, 145 70, 138 85 Z" fill="#ffffff" />
-                <path d="M155 180 L150 230 L210 230 L205 180 Z" fill="#18181b" stroke="#ef4444" stroke-width="1.5" />
-                <path d="M150 230 L95 290 L40 450 L320 450 L265 290 L210 230 L180 330 Z" fill="#991b1b" stroke="#ef4444" stroke-width="1.5" />
-              </svg>
+            <!-- Real Developer Portrait with Ambient Lighting -->
+            <div class="absolute inset-0 flex items-center justify-center overflow-hidden">
+              <img 
+                src="/rohan-developer.jpg" 
+                alt="Rohan Sapkale - Enterprise Systems & Cloud DevOps" 
+                class="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.02] transition-transform duration-700 group-hover:scale-105"
+              />
             </div>
 
             <!-- Soft Bottom Gradient Fade into Obsidian Base -->

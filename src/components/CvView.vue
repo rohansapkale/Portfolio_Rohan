@@ -40,18 +40,23 @@
         <!-- Header -->
         <div class="border-b border-[#1a202c] pb-8 space-y-4">
           <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-            <div>
-              <h1 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-                {{ cvData.name }}
-              </h1>
-              <p class="text-lg font-semibold text-blue-400 mt-1">
-                {{ cvData.title }}
-              </p>
-              <div class="flex items-center gap-2 mt-2">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-emerald-950/60 text-emerald-400 border border-emerald-800/40">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5"></span>
-                  {{ cvData.status }}
-                </span>
+            <div class="flex items-center sm:items-start gap-4">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-red-500/40 shadow-lg flex-shrink-0 bg-neutral-900">
+                <img src="/rohan-developer.jpg" alt="Rohan Sapkale" class="w-full h-full object-cover object-top" />
+              </div>
+              <div>
+                <h1 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">
+                  {{ cvData.name }}
+                </h1>
+                <p class="text-base sm:text-lg font-semibold text-red-400 mt-0.5">
+                  {{ cvData.title }}
+                </p>
+                <div class="flex items-center gap-2 mt-2">
+                  <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-emerald-950/60 text-emerald-400 border border-emerald-800/40">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5"></span>
+                    {{ cvData.status }}
+                  </span>
+                </div>
               </div>
             </div>
 

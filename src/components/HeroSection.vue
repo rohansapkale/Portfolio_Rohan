@@ -72,50 +72,13 @@
             <!-- Intense Center Red Glow -->
             <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 sm:w-64 h-48 sm:h-64 bg-red-600/30 rounded-full blur-[50px] sm:blur-[60px] pointer-events-none"></div>
 
-            <!-- Stylized Hero Portrait / Silhouette Graphic with Crimson Lighting -->
-            <div class="absolute inset-0 flex items-end justify-center pointer-events-none">
-              <!-- SVG Developer Silhouette with Red Rim Lighting -->
-              <svg class="w-full h-[92%] object-contain crimson-bottom-fade transition-transform duration-500 group-hover:translate-y-1" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="jacketGradient" x1="100" y1="200" x2="300" y2="500" gradientUnits="userSpaceOnUse">
-                    <stop offset="0%" stop-color="#dc2626" />
-                    <stop offset="40%" stop-color="#991b1b" />
-                    <stop offset="100%" stop-color="#450a0a" />
-                  </linearGradient>
-                  <filter id="crimsonGlow" x="-20%" y="-20%" width="140%" height="140%">
-                    <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ef4444" flood-opacity="0.6"/>
-                  </filter>
-                  <linearGradient id="faceGrad" x1="150" y1="90" x2="250" y2="230" gradientUnits="userSpaceOnUse">
-                    <stop offset="0%" stop-color="#e5e7eb" />
-                    <stop offset="60%" stop-color="#9ca3af" />
-                    <stop offset="100%" stop-color="#374151" />
-                  </linearGradient>
-                </defs>
-
-                <!-- Ambient Glow behind Head -->
-                <circle cx="200" cy="160" r="110" fill="#ef4444" fill-opacity="0.25" filter="blur(30px)" />
-
-                <!-- Sculpted Head & Face Contour -->
-                <path d="M165 95 C165 60, 235 60, 235 95 C242 120, 240 160, 232 185 C222 215, 178 215, 168 185 C160 160, 158 120, 165 95 Z" fill="url(#faceGrad)" />
-                
-                <!-- Hair Strands & Sharp Silhouette -->
-                <path d="M158 95 C150 70, 175 42, 200 40 C225 42, 250 70, 242 95 C235 80, 225 75, 200 75 C175 75, 165 80, 158 95 Z" fill="#f3f4f6" />
-                
-                <!-- Strong Neck & High Turtleneck Collar -->
-                <path d="M175 190 L170 245 L230 245 L225 190 Z" fill="#18181b" stroke="#ef4444" stroke-width="1.5" />
-                
-                <!-- Tailored Jacket in Deep Crimson / Ruby -->
-                <path d="M170 245 L115 310 L50 490 L350 490 L285 310 L230 245 L200 350 Z" fill="url(#jacketGradient)" stroke="#ef4444" stroke-width="1.5" filter="url(#crimsonGlow)" />
-                
-                <!-- Lapel Left -->
-                <path d="M170 245 L135 340 L195 440 L200 340 Z" fill="#b91c1c" />
-                <!-- Lapel Right -->
-                <path d="M230 245 L265 340 L205 440 L200 340 Z" fill="#7f1d1d" />
-
-                <!-- Detail Lines -->
-                <path d="M135 340 L195 440" stroke="#fca5a5" stroke-width="1" stroke-opacity="0.4" />
-                <path d="M265 340 L205 440" stroke="#fca5a5" stroke-width="1" stroke-opacity="0.4" />
-              </svg>
+            <!-- Real Developer Portrait with Ambient Lighting -->
+            <div class="absolute inset-0 flex items-center justify-center overflow-hidden">
+              <img 
+                src="/rohan-developer.jpg" 
+                alt="Rohan Sapkale - Systems Architect & Cloud DevOps" 
+                class="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.02] transition-transform duration-700 group-hover:scale-105"
+              />
             </div>
 
             <!-- Soft Bottom Gradient Fade into Obsidian Base -->

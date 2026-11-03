@@ -6,8 +6,8 @@
         <!-- Brand / Identity -->
         <div class="flex items-center gap-2.5 sm:gap-3">
           <a href="#" @click.prevent="navigate('hero')" class="flex items-center gap-2.5 sm:gap-3 group">
-            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-gradient-to-br from-red-600 to-neutral-900 border border-red-500/40 flex items-center justify-center font-bold text-white text-xs tracking-wider shadow-[0_0_15px_rgba(220,38,38,0.35)] group-hover:scale-105 transition-transform flex-shrink-0">
-              RS
+            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full overflow-hidden border border-red-500/50 shadow-[0_0_15px_rgba(220,38,38,0.4)] group-hover:scale-105 transition-transform flex-shrink-0 bg-neutral-900">
+              <img src="/rohan-developer.jpg" alt="Rohan Sapkale" class="w-full h-full object-cover object-top" />
             </div>
             <div>
               <div class="flex items-center gap-1.5 sm:gap-2">
