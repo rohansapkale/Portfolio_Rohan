@@ -48,47 +48,17 @@
 
         <!-- Right Side: Clean Minimalist Timeline List -->
         <div class="lg:col-span-7 space-y-4 sm:space-y-6 order-1 lg:order-2">
-          
-          <!-- Milestone 1 -->
-          <div class="p-4 sm:p-6 rounded-2xl bg-[#0e0e13] border border-white/[0.08] hover:border-red-500/30 transition-all space-y-2.5 sm:space-y-3">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/[0.06] pb-2.5 sm:pb-3">
-              <div>
-                <h3 class="text-sm sm:text-lg font-bold text-white">
-                  Lead Cloud DevOps &amp; Systems Architect
-                </h3>
-                <p class="text-[11px] sm:text-xs text-red-400 font-mono">CBD IT Solutions • Pune, MH</p>
-              </div>
-              <span class="text-[10px] sm:text-xs font-mono text-neutral-400 px-2.5 sm:px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 self-start sm:self-auto whitespace-nowrap">
-                Sept 2024 — Present
-              </span>
-            </div>
-            <ul class="text-[11px] sm:text-sm text-neutral-300 space-y-2 font-light leading-relaxed">
-              <li class="flex items-start gap-2">
-                <span class="text-red-500 mt-0.5 sm:mt-1 flex-shrink-0">▪</span>
-                <span>Architected AWS Multi-AZ infrastructure with Terraform (Application Load Balancers, Auto Scaling Groups, private VPC subnets, and automated failover).</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-red-500 mt-0.5 sm:mt-1 flex-shrink-0">▪</span>
-                <span>Engineered high-throughput Vue 3 commodity brokerage desk with 14-column accounting ledgers and automated European Central Bank daily forex rate updates.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-red-500 mt-0.5 sm:mt-1 flex-shrink-0">▪</span>
-                <span>Designed single-query database optimization replacing 55 sequential HTTP API loops with sub-15ms response latency.</span>
-              </li>
-            </ul>
-          </div>
-
           <!-- Milestone 2 -->
           <div class="p-4 sm:p-6 rounded-2xl bg-[#0e0e13] border border-white/[0.08] hover:border-red-500/30 transition-all space-y-2.5 sm:space-y-3">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/[0.06] pb-2.5 sm:pb-3">
               <div>
                 <h3 class="text-sm sm:text-lg font-bold text-white">
-                  Full-Stack Enterprise Systems Engineer
+                  Software Engineer | ERP Developer
                 </h3>
                 <p class="text-[11px] sm:text-xs text-neutral-400 font-mono">CBD IT Solutions</p>
               </div>
               <span class="text-[10px] sm:text-xs font-mono text-neutral-400 px-2.5 sm:px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 self-start sm:self-auto whitespace-nowrap">
-                Dec 2023 — Aug 2024
+                Dec 2025 — Continue
               </span>
             </div>
             <ul class="text-[11px] sm:text-sm text-neutral-300 space-y-2 font-light leading-relaxed">
