@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-[#090b10] text-slate-100 font-sans selection:bg-blue-600/30 selection:text-white">
+  <div class="min-h-screen flex flex-col bg-[#070709] text-neutral-100 font-sans selection:bg-red-600/30 selection:text-white">
     
-    <!-- Top Navigation Bar -->
+    <!-- Top Floating Navbar -->
     <Navbar 
       :current-view="currentView"
       :active-section="activeSection"
@@ -13,32 +13,40 @@
     <!-- Main View Switcher -->
     <main class="flex-grow">
       
-      <!-- View 1: Complete Interactive Portfolio -->
+      <!-- View 1: Complete Interactive Portfolio (Matching Reference Design) -->
       <div v-show="currentView === 'portfolio'" class="space-y-4">
         
-        <!-- Hero Section (Formal & Official, No Terminal) -->
+        <!-- Hero Section (Left Title & Value Prop + Right Framed Silhouette in Crimson Grid) -->
         <HeroSection 
           @navigate="handleNavigate"
           @switch-view="handleSwitchView"
-          @open-ops="openOpsConsole"
         />
 
-        <!-- Candidate Availability Banner -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <LookingForWorkBanner 
-            @navigate="handleNavigate"
-            @switch-view="handleSwitchView"
-          />
-        </div>
+        <!-- Section 1: Why Partner With Me / Today And Always? (Bento Grid) -->
+        <WhyPartnerSection />
 
-        <!-- Comprehensive Enterprise Modules & Solved Problems Showcase -->
-        <ModulesShowcaseSection />
+        <!-- Section 2: Featured Solutions & Projects (2x2 Visual Grid) -->
+        <ProjectsSection 
+          @open-case-studies="scrollToCaseStudies"
+          @select-project="handleSelectProject"
+        />
 
-        <!-- Dedicated AWS ALB & Terraform Project Showcase -->
+        <!-- Section 3: Professional milestones & impact (Timeline + Framed Red Grid Portrait) -->
+        <ExperienceMilestonesSection />
+
+        <!-- Section 4: A deep dive into my engineering philosophy (Interactive Architecture) -->
+        <PhilosophySection />
+
+        <!-- Section 5: Engineering Impact & Measurable Metrics (High-Impact KPIs) -->
+        <ImpactSection />
+
+        <!-- Deep Dive 1: AWS ALB & Terraform High-Availability Cloud Architecture -->
         <AlbProjectSection />
 
-        <!-- Skills Matrix (AWS, Terraform, Docker, Python, Vue, Linux) -->
-        <SkillsSection />
+        <!-- Deep Dive 2: Comprehensive Enterprise Modules Catalog & Solved Problems -->
+        <div id="case-studies">
+          <ModulesShowcaseSection />
+        </div>
 
       </div>
 
@@ -51,7 +59,7 @@
 
     </main>
 
-    <!-- Global Contact & Footer -->
+    <!-- Global Contact & Footer (Matching Obsidian & Crimson Palette) -->
     <ContactFooter 
       class="no-print"
       @navigate="handleNavigate"
@@ -72,10 +80,13 @@
 import { ref } from 'vue'
 import Navbar from './components/Navbar.vue'
 import HeroSection from './components/HeroSection.vue'
-import LookingForWorkBanner from './components/LookingForWorkBanner.vue'
-import ModulesShowcaseSection from './components/ModulesShowcaseSection.vue'
+import WhyPartnerSection from './components/WhyPartnerSection.vue'
+import ProjectsSection from './components/ProjectsSection.vue'
+import ExperienceMilestonesSection from './components/ExperienceMilestonesSection.vue'
+import PhilosophySection from './components/PhilosophySection.vue'
+import ImpactSection from './components/ImpactSection.vue'
 import AlbProjectSection from './components/AlbProjectSection.vue'
-import SkillsSection from './components/SkillsSection.vue'
+import ModulesShowcaseSection from './components/ModulesShowcaseSection.vue'
 import CvView from './components/CvView.vue'
 import OpsDeskModal from './components/OpsDeskModal.vue'
 import ContactFooter from './components/ContactFooter.vue'
@@ -101,6 +112,14 @@ function handleNavigate(sectionId) {
       el.scrollIntoView({ behavior: 'smooth' })
     }
   }, 50)
+}
+
+function scrollToCaseStudies() {
+  handleNavigate('case-studies')
+}
+
+function handleSelectProject(projectId) {
+  handleNavigate('case-studies')
 }
 
 function openOpsConsole() {

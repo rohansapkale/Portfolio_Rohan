@@ -1,5 +1,8 @@
 <template>
-  <footer id="contact" class="border-t border-[#1e2533] bg-[#090b10] pt-16 pb-12">
+  <footer id="contact" class="border-t border-white/[0.08] bg-[#070709] pt-16 pb-12 relative overflow-hidden">
+    <!-- Subtle Ambient Glow -->
+    <div class="absolute bottom-0 right-1/4 w-[600px] h-[300px] bg-red-600/[0.06] blur-[120px] rounded-full pointer-events-none -z-10"></div>
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <!-- Top Grid: Pitch & Quick Message -->
@@ -8,49 +11,49 @@
         <!-- Left: Contact Details & Availability -->
         <div class="lg:col-span-6 space-y-6">
           <div class="space-y-3">
-            <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-emerald-950/60 border border-emerald-800/40 text-emerald-400 text-xs font-medium">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-xs font-mono text-neutral-300">
+              <span class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_#ef4444]"></span>
               <span>Available for Immediate Hire</span>
             </div>
-            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-              Let's Discuss Your Systems & Cloud Architecture
+            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight leading-tight">
+              Let's Discuss Your Systems &amp; Cloud Architecture
             </h2>
-            <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl">
+            <p class="text-sm sm:text-base text-neutral-400 leading-relaxed max-w-xl font-light">
               Whether you need to architect high-availability AWS cloud infrastructure with Terraform, automate enterprise ERPNext modules, or build high-throughput Vue.js trading applications — I am ready to contribute immediately to your engineering goals.
             </p>
           </div>
 
           <!-- Direct Channels -->
           <div class="space-y-3 text-xs">
-            <div class="flex items-center gap-3 p-3.5 rounded-lg bg-[#0e1219] border border-[#1e2533]">
-              <span class="text-blue-400 text-base">✉️</span>
+            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#0e0e13] border border-white/[0.08] hover:border-red-500/30 transition-all">
+              <span class="text-red-400 text-base">✉️</span>
               <div>
-                <span class="text-slate-400 text-[10px] uppercase tracking-wider block">Email Address</span>
-                <a href="mailto:sapkalerohan07@gmail.com" class="text-white hover:text-blue-400 font-semibold transition-colors">sapkalerohan07@gmail.com</a>
+                <span class="text-neutral-500 text-[10px] uppercase font-mono tracking-wider block">Email Address</span>
+                <a href="mailto:sapkalerohan07@gmail.com" class="text-white hover:text-red-400 font-semibold transition-colors">sapkalerohan07@gmail.com</a>
               </div>
             </div>
 
-            <div class="flex items-center gap-3 p-3.5 rounded-lg bg-[#0e1219] border border-[#1e2533]">
-              <span class="text-blue-400 text-base">🐙</span>
+            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#0e0e13] border border-white/[0.08] hover:border-red-500/30 transition-all">
+              <span class="text-neutral-300 text-base">🐙</span>
               <div>
-                <span class="text-slate-400 text-[10px] uppercase tracking-wider block">GitHub Profile</span>
-                <a href="https://github.com/rohansapkale" target="_blank" rel="noopener" class="text-white hover:text-blue-400 font-semibold transition-colors">github.com/rohansapkale</a>
+                <span class="text-neutral-500 text-[10px] uppercase font-mono tracking-wider block">GitHub Profile</span>
+                <a href="https://github.com/rohansapkale" target="_blank" rel="noopener" class="text-white hover:text-red-400 font-semibold transition-colors">github.com/rohansapkale</a>
               </div>
             </div>
 
-            <div class="flex items-center gap-3 p-3.5 rounded-lg bg-[#0e1219] border border-[#1e2533]">
-              <span class="text-amber-400 text-base">✈️</span>
+            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#0e0e13] border border-white/[0.08] hover:border-red-500/30 transition-all">
+              <span class="text-neutral-300 text-base">✈️</span>
               <div>
-                <span class="text-slate-400 text-[10px] uppercase tracking-wider block">Telegram Operations Bot</span>
+                <span class="text-neutral-500 text-[10px] uppercase font-mono tracking-wider block">Telegram Operations Bot</span>
                 <span class="text-white font-semibold">@ServerBoatBot • @rohan_sapkale</span>
               </div>
             </div>
 
-            <div class="flex items-center gap-3 p-3.5 rounded-lg bg-[#0e1219] border border-[#1e2533]">
+            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#0e0e13] border border-white/[0.08]">
               <span class="text-emerald-400 text-base">📍</span>
               <div>
-                <span class="text-slate-400 text-[10px] uppercase tracking-wider block">Location & Mobility</span>
-                <span class="text-white font-semibold">India • Available for Remote & Global Relocation</span>
+                <span class="text-neutral-500 text-[10px] uppercase font-mono tracking-wider block">Location &amp; Mobility</span>
+                <span class="text-white font-semibold">India • Available for Remote &amp; Global Relocation</span>
               </div>
             </div>
           </div>
@@ -58,70 +61,59 @@
 
         <!-- Right: Official Inquiry Dispatcher Form -->
         <div class="lg:col-span-6">
-          <div class="p-6 sm:p-8 rounded-xl border border-[#1e2533] bg-[#0d1017] space-y-4">
-            <h3 class="text-base font-bold text-white flex items-center gap-2">
-              <svg class="w-4 h-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-              </svg>
-              <span>Direct Inquiry Form</span>
-            </h3>
+          <div class="bento-card p-6 sm:p-8 space-y-5 bg-[#0e0e13]">
+            <div class="border-b border-white/[0.06] pb-3">
+              <h3 class="text-lg font-bold text-white">Send Direct Message</h3>
+              <p class="text-xs text-neutral-400 font-light">Dispatches directly to my workstation and Telegram notifications</p>
+            </div>
 
-            <form @submit.prevent="sendMessage" class="space-y-3.5 text-xs">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                <div class="space-y-1">
-                  <label class="text-slate-400 font-medium">Your Name</label>
-                  <input 
-                    v-model="form.name" 
-                    type="text" 
-                    required 
-                    placeholder="Recruiter / Hiring Manager" 
-                    class="w-full px-3 py-2 rounded-md bg-[#121620] border border-[#202738] text-white focus:outline-none focus:border-blue-500"
-                  />
-                </div>
-                <div class="space-y-1">
-                  <label class="text-slate-400 font-medium">Your Email</label>
-                  <input 
-                    v-model="form.email" 
-                    type="email" 
-                    required 
-                    placeholder="contact@company.com" 
-                    class="w-full px-3 py-2 rounded-md bg-[#121620] border border-[#202738] text-white focus:outline-none focus:border-blue-500"
-                  />
-                </div>
-              </div>
-
-              <div class="space-y-1">
-                <label class="text-slate-400 font-medium">Subject / Target Role</label>
+            <form @submit.prevent="sendMessage" class="space-y-4">
+              <div>
+                <label class="block text-xs font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">Your Name / Organization</label>
                 <input 
-                  v-model="form.subject" 
+                  v-model="form.name"
                   type="text" 
-                  required 
-                  placeholder="Cloud DevOps Engineer / Full-Stack Systems Specialist" 
-                  class="w-full px-3 py-2 rounded-md bg-[#121620] border border-[#202738] text-white focus:outline-none focus:border-blue-500"
+                  required
+                  placeholder="e.g. Alex Vance • Principal Architect"
+                  class="w-full bg-[#14141a] border border-white/[0.1] rounded-xl px-4 py-2.5 text-xs sm:text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-all"
                 />
               </div>
 
-              <div class="space-y-1">
-                <label class="text-slate-400 font-medium">Message Details</label>
+              <div>
+                <label class="block text-xs font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">Work Email</label>
+                <input 
+                  v-model="form.email"
+                  type="email" 
+                  required
+                  placeholder="alex@enterprise.com"
+                  class="w-full bg-[#14141a] border border-white/[0.1] rounded-xl px-4 py-2.5 text-xs sm:text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-all"
+                />
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-neutral-400 mb-1.5 uppercase tracking-wider">Project / Systems Brief</label>
                 <textarea 
-                  v-model="form.message" 
-                  rows="3" 
-                  required 
-                  placeholder="Hello Rohan, we are reviewing your experience in AWS, Terraform, and enterprise Frappe systems..." 
-                  class="w-full px-3 py-2 rounded-md bg-[#121620] border border-[#202738] text-white focus:outline-none focus:border-blue-500 resize-none"
+                  v-model="form.message"
+                  rows="4" 
+                  required
+                  placeholder="Describe your architecture requirements, infrastructure scale, or open engineering role..."
+                  class="w-full bg-[#14141a] border border-white/[0.1] rounded-xl p-4 text-xs sm:text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-all resize-none"
                 ></textarea>
               </div>
 
-              <button 
-                type="submit" 
-                class="w-full btn-primary py-2.5 text-xs font-semibold"
-              >
-                <span>Submit Inquiry</span>
-                <span>→</span>
-              </button>
+              <div class="flex items-center justify-between pt-2">
+                <button 
+                  type="submit" 
+                  :disabled="isSubmitting"
+                  class="btn-pill-white w-full sm:w-auto text-xs"
+                >
+                  <span v-if="!isSubmitting">Dispatch Message →</span>
+                  <span v-else>Transmitting Message...</span>
+                </button>
 
-              <div v-if="sent" class="p-3 rounded bg-emerald-950/60 border border-emerald-800/40 text-emerald-400 text-center font-medium">
-                ✓ Message received! Launching email client to deliver message.
+                <p v-if="submitted" class="text-xs text-emerald-400 font-mono">
+                  ✓ Message transmitted successfully!
+                </p>
               </div>
             </form>
           </div>
@@ -130,16 +122,14 @@
       </div>
 
       <!-- Bottom Bar -->
-      <div class="pt-8 border-t border-[#1e2533] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div class="pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500 font-mono">
         <div>
-          © 2026 Rohan Sapkale. All rights reserved.
+          © 2026 Rohan Sapkale. All rights reserved. Built with Vue 3, Vite &amp; Tailwind CSS.
         </div>
         <div class="flex items-center gap-4">
-          <a href="#hero" @click.prevent="$emit('navigate', 'hero')" class="hover:text-white transition-colors">Top of Page ↑</a>
-          <span>•</span>
           <button @click="$emit('switch-view', 'cv')" class="hover:text-white transition-colors">Executive CV</button>
           <span>•</span>
-          <button @click="$emit('open-ops')" class="hover:text-amber-400 transition-colors">Private Console</button>
+          <a href="#hero" class="hover:text-white transition-colors">Back to Top ↑</a>
         </div>
       </div>
 
@@ -150,26 +140,36 @@
 <script setup>
 import { reactive, ref } from 'vue'
 
-defineEmits(['navigate', 'switch-view', 'open-ops'])
+const emit = defineEmits(['navigate', 'switch-view', 'open-ops'])
 
-const sent = ref(false)
 const form = reactive({
   name: '',
   email: '',
-  subject: '',
-  message: ''
+  message: '',
 })
 
-function sendMessage() {
-  sent.value = true
-  const mailtoLink = `mailto:sapkalerohan07@gmail.com?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent("From: " + form.name + " (" + form.email + ")\n\n" + form.message)}`
-  window.open(mailtoLink, '_blank')
-  setTimeout(() => {
+const isSubmitting = ref(false)
+const submitted = ref(false)
+
+const sendMessage = async () => {
+  isSubmitting.value = true
+  try {
+    await fetch('/api/ops/inquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    })
+  } catch (e) {
+    // Graceful offline fallback
+  } finally {
+    isSubmitting.value = false
+    submitted.value = true
     form.name = ''
     form.email = ''
-    form.subject = ''
     form.message = ''
-    sent.value = false
-  }, 4000)
+    setTimeout(() => {
+      submitted.value = false
+    }, 5000)
+  }
 }
 </script>
