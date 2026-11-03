@@ -35,7 +35,7 @@
       </div>
 
       <!-- Resume Sheet Container -->
-      <div class="cv-sheet p-8 sm:p-12 rounded-xl border border-[#1e2533] shadow-md space-y-9 bg-[#0d1017]">
+      <div class="cv-sheet p-4 sm:p-8 md:p-12 rounded-xl border border-[#1e2533] shadow-md space-y-7 sm:space-y-9 bg-[#0d1017]">
         
         <!-- Header -->
         <div class="border-b border-[#1a202c] pb-8 space-y-4">

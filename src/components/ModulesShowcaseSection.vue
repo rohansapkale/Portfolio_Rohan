@@ -45,7 +45,7 @@
           class="rounded-xl border border-[#1e2533] bg-[#0d1017] hover:border-[#2b3548] transition-all overflow-hidden shadow-md"
         >
           <!-- Module Header Bar -->
-          <div class="p-6 sm:p-7 border-b border-[#1a202c] bg-[#10141d] flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="p-4 sm:p-6 lg:p-7 border-b border-[#1a202c] bg-[#10141d] flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div class="space-y-1.5">
               <div class="flex flex-wrap items-center gap-2">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold bg-[#172033] text-blue-300 border border-[#2b3a59]">
@@ -81,7 +81,7 @@
           </div>
 
           <!-- Deep-Dive Columns: Problem Solved vs Configuration & Architecture -->
-          <div class="p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div class="p-4 sm:p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
             
             <!-- Left Column: Problem Solved -->
             <div class="lg:col-span-6 space-y-4">
