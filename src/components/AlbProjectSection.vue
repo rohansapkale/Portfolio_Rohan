@@ -167,53 +167,6 @@
         </div>
       </div>
 
-      <!-- Terraform IaC Blueprint Viewer -->
-      <div class="rounded-xl overflow-hidden border border-[#1e2533] bg-[#0c0f16]">
-        
-        <!-- Viewer Header & File Tabs -->
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-[#10141d] border-b border-[#1a202c]">
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Terraform Source Modules</span>
-          </div>
-
-          <!-- File Tabs -->
-          <div class="flex flex-wrap items-center gap-1.5">
-            <button 
-              v-for="(code, filename) in albProjectData.terraformFiles" 
-              :key="filename"
-              @click="activeTab = filename"
-              :class="[
-                activeTab === filename 
-                  ? 'bg-[#1e2638] text-white border-[#3b4b6d] font-semibold' 
-                  : 'text-slate-400 hover:text-slate-200 hover:bg-[#141824] border-transparent',
-                'px-3 py-1 rounded text-xs font-mono border transition-colors'
-              ]"
-            >
-              {{ filename }}
-            </button>
-            
-            <!-- Copy Code Button -->
-            <button 
-              @click="copyCode" 
-              class="px-2.5 py-1 text-xs rounded bg-[#171d2b] text-slate-300 hover:text-white hover:bg-[#20283b] ml-2 border border-[#273248] transition-colors"
-            >
-              <span>{{ copied ? 'Copied' : 'Copy Code' }}</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Code Block -->
-        <div class="p-4 sm:p-6 bg-[#080a0f] overflow-x-auto text-xs font-mono text-slate-300 leading-relaxed max-h-[460px] overflow-y-auto">
-          <pre><code>{{ albProjectData.terraformFiles[activeTab] }}</code></pre>
-        </div>
-
-        <!-- Code Footer -->
-        <div class="p-3 bg-[#10141d] border-t border-[#1a202c] flex items-center justify-between text-xs text-slate-400">
-          <span>Target Provider: hashicorp/aws ~> 5.0</span>
-          <span class="text-slate-300">Status: Validated with terraform validate & plan</span>
-        </div>
-      </div>
-
     </div>
   </section>
 </template>
@@ -222,9 +175,7 @@
 import { ref, computed } from 'vue'
 import { albProjectData } from '../data/albArchitectureData.js'
 
-const activeTab = ref('alb.tf')
 const activeNode = ref('alb')
-const copied = ref(false)
 
 const nodeDetails = {
   route53: {
@@ -260,14 +211,4 @@ const nodeDetails = {
 const activeNodeData = computed(() => {
   return nodeDetails[activeNode.value] || nodeDetails.alb
 })
-
-function copyCode() {
-  const code = albProjectData.terraformFiles[activeTab.value]
-  navigator.clipboard.writeText(code).then(() => {
-    copied.value = true
-    setTimeout(() => {
-      copied.value = false
-    }, 2000)
-  })
-}
 </script>
