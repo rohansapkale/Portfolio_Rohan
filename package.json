@@ -1,0 +1,22 @@
+{
+  "name": "rohan-sapkale-portfolio",
+  "version": "1.0.0",
+  "description": "Rohan Sapkale - Cloud DevOps Specialist & Full-Stack Systems Engineer Portfolio & CV",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 8085",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 8085"
+  },
+  "dependencies": {
+    "lucide-vue-next": "^0.359.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.19",
+    "vite": "^5.1.6"
+  }
+}

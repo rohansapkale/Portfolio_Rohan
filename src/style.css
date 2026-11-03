@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Ubuntu Mono', monospace;
+
+  /* Formal Executive Dark Palette (No Neon) */
+  --bg-primary: #090b10;
+  --bg-secondary: #0d1017;
+  --bg-card: #121620;
+  --bg-card-hover: #161b27;
+  --bg-elevated: #1a2232;
+
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  /* Executive Corporate Accents */
+  --corp-blue: #2563eb;
+  --corp-blue-light: #3b82f6;
+  --corp-slate: #475569;
+  --corp-emerald: #059669;
+
+  --border-subtle: #1e2533;
+  --border-strong: #2a3447;
+  --border-hover: #3b4760;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+code, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom Scrollbars - Refined & Minimal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090b10;
+}
+::-webkit-scrollbar-thumb {
+  background: #202736;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2d374d;
+}
+
+/* Formal Corporate Cards */
+.card-formal {
+  background: #10141d;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-formal:hover {
+  border-color: var(--border-strong);
+  background: #131823;
+  transform: translateY(-1px);
+}
+
+/* Formal Badges */
+.badge-formal {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 6px;
+  background: #171d2b;
+  color: #cbd5e1;
+  border: 1px solid #263147;
+}
+
+.badge-status {
+  background: rgba(5, 150, 105, 0.12);
+  color: #34d399;
+  border: 1px solid rgba(5, 150, 105, 0.3);
+}
+
+.badge-blue {
+  background: rgba(37, 99, 235, 0.12);
+  color: #93c5fd;
+  border: 1px solid rgba(37, 99, 235, 0.3);
+}
+
+/* Formal Corporate Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  border: 1px solid #3b82f6;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background: #1d4ed8;
+  border-color: #2563eb;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 8px;
+  background: #121620;
+  color: #e2e8f0;
+  border: 1px solid var(--border-strong);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  background: #181e2b;
+  border-color: #3e4c66;
+  color: #ffffff;
+}
+
+.btn-ops {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #1c1810;
+  color: #fbbf24;
+  border: 1px solid #45300e;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.btn-ops:hover {
+  background: #261f12;
+  border-color: #784a0d;
+}
+
+/* Formal Clean Print Styles for CV / Resume */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+  .no-print, header, nav, .ops-modal, .ops-btn, .footer-no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .cv-sheet {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+  .cv-sheet * {
+    color: #0f172a !important;
+    border-color: #e2e8f0 !important;
+  }
+}

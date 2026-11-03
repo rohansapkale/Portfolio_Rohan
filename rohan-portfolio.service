@@ -1,0 +1,17 @@
+[Unit]
+Description=Rohan Sapkale Portfolio & Cloud Ops Console
+After=network.target
+
+[Service]
+Type=simple
+User=frappe
+WorkingDirectory=/home/frappe/frappe-bench-v16/apps/rohan_portfolio
+ExecStart=/home/frappe/frappe-bench-v16/env/bin/python unified_server.py
+Restart=always
+RestartSec=5
+StandardOutput=append:/tmp/rohan_portfolio.log
+StandardError=append:/tmp/rohan_portfolio.log
+
+[Install]
+WantedBy=multi-user.target
+
