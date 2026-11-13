@@ -6,9 +6,7 @@
 ---
 
 ## 🌐 Live Access URLs
-- **Standard Port 80 (Recommended)**: `http://157.15.203.96/portfolio/` or `http://rohan.getmyerp.com/portfolio/`
-- **Direct Port 8085**: `http://157.15.203.96:8085/`
-- **Owner Passcode for Ops Console**: `rohan2026`
+--- https://portfolio-rohan-sapkale.vercel.app/
 
 ---
 
